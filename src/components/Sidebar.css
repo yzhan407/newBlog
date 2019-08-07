@@ -1,18 +1,50 @@
 div.sidebar {
   position:fixed;
   z-index: 1;
+  top: 40%;
+  width: 15%;
+  left: 50px;
 }
 
 a#envelope-icon {
+  display: block;
   color:rgb(50, 135, 214);
   font-size: 2.5em;
+  border-width: 0px;
+}
+
+a#envelope-icon :hover{
+  transform: scale(1.3);
+  transition: color 0.3s ease-in;
+  color: pink;
+}
+.fa-envelope :hover{
+  transform: scale(1) !important;
 }
 a#github-icon {
   color:black;
   font-size:2.5em;
 }
 
+.fa-github :hover{
+  transform :scale(1) !important;
+}
+
+a#github-icon :hover{
+  transform: scale(1.3);
+}
+
 a#linkedin-icon {
   color: rgb(50, 135, 214);
   font-size: 2.5em;
+}
+
+a#linkedin-icon :hover{
+  transform : scale(1.3);
+  color: blue;
+  transition: color 0.3s ease-in;
+}
+
+.fa-linkedin :hover{
+  transform : scale(1) !important ;
 }

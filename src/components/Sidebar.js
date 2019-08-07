@@ -23,7 +23,7 @@ componentDidMount(){
         <div className="sidebar">
           <div>
           <a id="envelope-icon"  href="mailto:yifanzhang47@gmail.com">
-            <FontAwesomeIcon icon={faEnvelope}/>
+            <FontAwesomeIcon icon={faEnvelope} />
           </a>
           </div>
           <div>
