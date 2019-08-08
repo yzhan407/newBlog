@@ -22,17 +22,17 @@ componentDidMount(){
     return (
         <div className="sidebar">
           <div>
-          <a id="envelope-icon"  href="mailto:yifanzhang47@gmail.com">
+          <a id="envelope-icon"  href="mailto:yifanzhang47@gmail.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faEnvelope} />
           </a>
           </div>
           <div>
-          <a id="github-icon" href="https://github.com/yzhan407">
+          <a id="github-icon" href="https://github.com/yzhan407" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faGithub} />
           </a>
           </div>
           <div>
-          <a id="linkedin-icon" href="https://linkedin.com/in/eason-zhang-022312184/">
+          <a id="linkedin-icon" href="https://linkedin.com/in/eason-zhang-022312184/" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
           </div>
