@@ -4,6 +4,7 @@ import Title from './components/Title';
 import Article from './components/Article';
 import axios from 'axios';
 import Sidebar from './components/Sidebar';
+import Footer from './components/Footer';
 
 
 
@@ -17,7 +18,7 @@ class App extends Component {
   }
 
   // there needs to be () around res, and res is an object consists of data ,status etc.
-
+  
   componentDidMount(){
     axios.get(`http://www.yifanzhang47.com/wp-json/wp/v2/posts`)
       .then((res)=>{
@@ -40,13 +41,15 @@ class App extends Component {
     
   }
 
-  
+
+
   render() {
     return (
-      <div>
-        <Title></Title>
+      <div >
+        <Title ></Title>
           <Article articlenums={this.state.data.length} data={this.state.data}></Article>
           <Sidebar updateInfo={this.state.updateInfo}/>
+          <Footer />
       </div>
     );
   }
