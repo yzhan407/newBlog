@@ -1,19 +1,33 @@
-img.earth-img-0{
+img.earth-img-0-0{
   position:fixed;
   margin-left: auto;
   margin-right:auto;
   z-index: -1;
-  bottom:0;
+  bottom: calc(0% - 1000px);
   transform: rotate(72deg);
 }
 
-img.earth-img-72{
+img.earth-img-0-1{
   position:fixed;
   margin-left: auto;
   margin-right:auto;
   z-index: -1;
-  bottom:0;
-  animation: myRotate72 0.5s ease-in 0s 1 normal forwards;
+  bottom: calc(0% - 1000px);
+  animation: myRotate01 0.3s ease-in 0s 1 normal forwards;
+}
+
+@keyframes myRotate01 {
+  from {transform: rotate(72deg)}
+  to {transform: rotate(0deg)}
+}
+
+img.earth-img-72-0{
+  position:fixed;
+  margin-left: auto;
+  margin-right:auto;
+  z-index: -1;
+  bottom: calc(0% - 1000px);
+  animation: myRotate72 0.3s ease-in 0s 1 normal forwards;
 }
 
 @keyframes myRotate72 {
@@ -21,29 +35,100 @@ img.earth-img-72{
   to {transform: rotate(144deg)}
 }
 
-img.earth-img-144{
+img.earth-img-72-1{
   position:fixed;
   margin-left: auto;
   margin-right:auto;
   z-index: -1;
-  bottom:0;
-  transform: rotate(216deg);
+  bottom: calc(0% - 1000px);
+  animation: myRotate721 0.3s ease-in 0s 1 reverse forwards;
 }
 
-img.earth-img-216{
-  position:fixed;
-  margin-left: auto;
-  margin-right:auto;
-  z-index: -1;
-  bottom:0;
-  transform: rotate(288deg);
+@keyframes myRotate721 {
+  from {transform: rotate(72deg)}
+  to {transform: rotate(144deg)}
 }
 
-img.earth-img-288{
+img.earth-img-144-0{
   position:fixed;
   margin-left: auto;
   margin-right:auto;
   z-index: -1;
-  bottom:0;
-  transform: rotate(360deg);
+  bottom: calc(0% - 1000px);
+  animation: myRotate144 0.3s ease-in 0s 1 normal forwards;
+}
+
+@keyframes myRotate144 {
+  from {transform: rotate(144deg)}
+  to {transform: rotate(216deg)}
+}
+
+img.earth-img-144-1{
+  position:fixed;
+  margin-left: auto;
+  margin-right:auto;
+  z-index: -1;
+  bottom: calc(0% - 1000px);
+  animation: myRotate1441 0.3s ease-in 0s 1 reverse forwards;
+}
+
+@keyframes myRotate1441 {
+  from {transform: rotate(144deg)}
+  to {transform: rotate(216deg)}
+}
+
+img.earth-img-216-0{
+  position:fixed;
+  margin-left: auto;
+  margin-right:auto;
+  z-index: -1;
+  bottom: calc(0% - 1000px);
+  animation: myRotate216 0.3s ease-in 0s 1 normal forwards;
+}
+
+@keyframes myRotate216 {
+  from {transform: rotate(216deg)}
+  to {transform: rotate(288deg)}
+}
+img.earth-img-216-1{
+  position:fixed;
+  margin-left: auto;
+  margin-right:auto;
+  z-index: -1;
+  bottom: calc(0% - 1000px);
+  animation: myRotate2161 0.3s ease-in 0s 1 reverse forwards;
+}
+
+@keyframes myRotate2161 {
+  from {transform: rotate(216deg)}
+  to {transform: rotate(288deg)}
+}
+
+
+img.earth-img-288-0{
+  position:fixed;
+  margin-left: auto;
+  margin-right:auto;
+  z-index: -1;
+  bottom: calc(0% - 1000px);
+  animation: myRotate288 0.3s ease-in 0s 1 normal forwards;
+}
+
+@keyframes myRotate288 {
+  from {transform: rotate(288deg)}
+  to {transform: rotate(360deg)}
+}
+
+img.earth-img-288-1{
+  position:fixed;
+  margin-left: auto;
+  margin-right:auto;
+  z-index: -1;
+  bottom: calc(0% - 1000px);
+  animation: myRotate2881 0.3s ease-in 0s 1 reverse forwards;
+}
+
+@keyframes myRotate2881 {
+  from {transform: rotate(288deg)}
+  to {transform: rotate(360deg)}
 }

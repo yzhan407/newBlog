@@ -8,6 +8,9 @@ class Footer extends React.Component{
     this.handleResize=this.handleResize.bind(this);
     this.state={
       rotation: 0,
+      winHeight:0,
+      seg: 0,
+      action: 0,
     }
   }
 
@@ -16,48 +19,123 @@ class Footer extends React.Component{
   };
   componentDidMount(){
     window.addEventListener("scroll",this.handleScrollEvent,true);
+    window.addEventListener("resize",this.handleResize);
   };
   componentWillUnmount(){
     window.removeEventListener("scroll",this.handleScrollEvent);
+    window.removeEventListener("resize",this.handleResize);
   };
   handleScrollEvent(){
-    switch(Math.round(window.pageYOffset/500)){
+    const segment=Math.round(window.pageYOffset/500);
+    switch(segment){
       case 0:
-        this.setState({
-          rotation: 0,
-        });
+        if(segment !== this.state.seg){
+          if (segment < this.state.seg){
+            this.setState({
+              rotation:0,
+              action: 0,
+            });
+          }
+          else{
+            this.setState({
+              rotation:0,
+              action: 1,
+            })
+          };
+        }
         break;
       case 1:
-        this.setState({
-          rotation: 72,
-        });
+        if(segment !== this.state.seg){
+          if (segment < this.state.seg){
+            this.setState({
+              rotation:72,
+              action: 0,
+            });
+          }
+          else{
+            this.setState({
+              rotation:72,
+              action: 1,
+            })
+          };
+        }
+        
         break;
       case 2:
-        this.setState({
-          rotation: 144,
-        });
+        if (segment !== this.state.seg){
+          if (segment < this.state.seg){
+            this.setState({
+              rotation:144,
+              action: 0,
+            });
+          }
+          else{
+            this.setState({
+              rotation:144,
+              action: 1,
+            })
+          };
+        }
+        
         break;
       case 3:
-        this.setState({
-          rotation: 216,
-        });
+        if (segment !== this.state.seg){
+          if (segment < this.state.seg){
+            this.setState({
+              rotation:216,
+              action: 0,
+            });
+          }
+          else{
+            this.setState({
+              rotation:216,
+              action: 1,
+            })
+          };
+        }
+        
         break;
       case 4:
-        this.setState({
-          rotation: 288,
-        });
+        if (segment !== this.state.seg){
+          if (segment < this.state.seg){
+            this.setState({
+              rotation:288,
+              action: 0,
+            });
+          }
+          else{
+            this.setState({
+              rotation:288,
+              action: 1,
+            })
+          };
+        }
+        
         break;
       default:
-        this.setState({
-          rotation: 0,
-        });
+        if(segment !== this.state.seg){
+          if (segment < this.state.seg){
+            this.setState({
+              rotation:0,
+              action: 0,
+            });
+          }
+          else{
+            this.setState({
+              rotation:0,
+              action: 1,
+            })
+          };
+        }
       break;
     }
+  };
+  handleResize(){
   };
   render(){
     return(
       <div className="footer-main">
-        <img className={'earth-img-'+this.state.rotation} ref="image0" src={earth} alt="earthImage" onScroll={this.handleScrollEvent }/>
+        <img className={'earth-img-'+this.state.rotation+'-'+this.state.action} ref="image0" src={earth} alt="earthImage" onScroll={this.handleScrollEvent }/>
       </div>
     )
   }
