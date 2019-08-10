@@ -1,8 +1,49 @@
-img.earth-img{
+img.earth-img-0{
   position:fixed;
   margin-left: auto;
   margin-right:auto;
   z-index: -1;
-  bottom:-160%;
-  transform: rotate(90deg);
+  bottom:0;
+  transform: rotate(72deg);
+}
+
+img.earth-img-72{
+  position:fixed;
+  margin-left: auto;
+  margin-right:auto;
+  z-index: -1;
+  bottom:0;
+  animation: myRotate72 0.5s ease-in 0s 1 normal forwards;
+}
+
+@keyframes myRotate72 {
+  from {transform: rotate(72deg)}
+  to {transform: rotate(144deg)}
+}
+
+img.earth-img-144{
+  position:fixed;
+  margin-left: auto;
+  margin-right:auto;
+  z-index: -1;
+  bottom:0;
+  transform: rotate(216deg);
+}
+
+img.earth-img-216{
+  position:fixed;
+  margin-left: auto;
+  margin-right:auto;
+  z-index: -1;
+  bottom:0;
+  transform: rotate(288deg);
+}
+
+img.earth-img-288{
+  position:fixed;
+  margin-left: auto;
+  margin-right:auto;
+  z-index: -1;
+  bottom:0;
+  transform: rotate(360deg);
 }
