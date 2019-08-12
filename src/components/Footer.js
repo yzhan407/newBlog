@@ -34,12 +34,14 @@ class Footer extends React.Component{
             this.setState({
               rotation:0,
               action: 0,
+              seg : segment,
             });
           }
           else{
             this.setState({
               rotation:0,
               action: 1,
+              seg : segment,
             })
           };
         }
@@ -50,12 +52,14 @@ class Footer extends React.Component{
             this.setState({
               rotation:72,
               action: 0,
+              seg : segment,
             });
           }
           else{
             this.setState({
               rotation:72,
               action: 1,
+              seg : segment,
             })
           };
         }
@@ -67,12 +71,14 @@ class Footer extends React.Component{
             this.setState({
               rotation:144,
               action: 0,
+              seg : segment,
             });
           }
           else{
             this.setState({
               rotation:144,
               action: 1,
+              seg : segment,
             })
           };
         }
@@ -84,12 +90,14 @@ class Footer extends React.Component{
             this.setState({
               rotation:216,
               action: 0,
+              seg : segment,
             });
           }
           else{
             this.setState({
               rotation:216,
               action: 1,
+              seg : segment,
             })
           };
         }
@@ -101,12 +109,14 @@ class Footer extends React.Component{
             this.setState({
               rotation:288,
               action: 0,
+              seg : segment,
             });
           }
           else{
             this.setState({
               rotation:288,
               action: 1,
+              seg : segment,
             })
           };
         }
@@ -118,12 +128,14 @@ class Footer extends React.Component{
             this.setState({
               rotation:0,
               action: 0,
+              seg : segment,
             });
           }
           else{
             this.setState({
               rotation:0,
               action: 1,
+              seg : segment,
             })
           };
         }

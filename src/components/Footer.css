@@ -1,33 +1,38 @@
 img.earth-img-0-0{
   position:fixed;
-  margin-left: auto;
-  margin-right:auto;
+  display: block;
+  margin-left: calc(50% - 650px);
   z-index: -1;
   bottom: calc(0% - 1000px);
-  transform: rotate(72deg);
+  animation: my00Rotate 0.3s ease-in-out 0s 1 normal forwards;
+}
+
+@keyframes my00Rotate {
+  from {transform: rotate(0deg)}
+  to {transform: rotate(72deg)}
 }
 
 img.earth-img-0-1{
   position:fixed;
-  margin-left: auto;
-  margin-right:auto;
+  display: block;
+  margin-left: calc(50% - 650px);
   z-index: -1;
   bottom: calc(0% - 1000px);
-  animation: myRotate01 0.3s ease-in 0s 1 normal forwards;
+  animation: my01Rotate 0.3s ease-in-out 0s 1 reverse forwards;
 }
 
-@keyframes myRotate01 {
-  from {transform: rotate(72deg)}
-  to {transform: rotate(0deg)}
+@keyframes my01Rotate {
+  from {transform: rotate(0deg)}
+  to {transform: rotate(72deg)}
 }
 
 img.earth-img-72-0{
   position:fixed;
-  margin-left: auto;
-  margin-right:auto;
+  display: block;
+  margin-left: calc(50% - 650px);
   z-index: -1;
   bottom: calc(0% - 1000px);
-  animation: myRotate72 0.3s ease-in 0s 1 normal forwards;
+  animation: myRotate72 0.3s ease-in-out 0s 1 normal forwards;
 }
 
 @keyframes myRotate72 {
@@ -37,25 +42,25 @@ img.earth-img-72-0{
 
 img.earth-img-72-1{
   position:fixed;
-  margin-left: auto;
-  margin-right:auto;
+  display: block;
+  margin-left: calc(50% - 650px);
   z-index: -1;
   bottom: calc(0% - 1000px);
-  animation: myRotate721 0.3s ease-in 0s 1 reverse forwards;
+  animation: my7201Rotate 0.3s ease-in-out 0s 1 reverse forwards;
 }
 
-@keyframes myRotate721 {
+@keyframes my7201Rotate {
   from {transform: rotate(72deg)}
   to {transform: rotate(144deg)}
 }
 
 img.earth-img-144-0{
   position:fixed;
-  margin-left: auto;
-  margin-right:auto;
+  display: block;
+  margin-left: calc(50% - 650px);
   z-index: -1;
   bottom: calc(0% - 1000px);
-  animation: myRotate144 0.3s ease-in 0s 1 normal forwards;
+  animation: myRotate144 0.3s ease-in-out 0s 1 normal forwards;
 }
 
 @keyframes myRotate144 {
@@ -65,25 +70,25 @@ img.earth-img-144-0{
 
 img.earth-img-144-1{
   position:fixed;
-  margin-left: auto;
-  margin-right:auto;
+  display: block;
+  margin-left: calc(50% - 650px);
   z-index: -1;
   bottom: calc(0% - 1000px);
-  animation: myRotate1441 0.3s ease-in 0s 1 reverse forwards;
+  animation: my-Rotate1441 0.3s ease-in-out 0s 1 reverse forwards;
 }
 
-@keyframes myRotate1441 {
+@keyframes my-Rotate1441 {
   from {transform: rotate(144deg)}
   to {transform: rotate(216deg)}
 }
 
 img.earth-img-216-0{
   position:fixed;
-  margin-left: auto;
-  margin-right:auto;
+  display: block;
+  margin-left: calc(50% - 650px);
   z-index: -1;
   bottom: calc(0% - 1000px);
-  animation: myRotate216 0.3s ease-in 0s 1 normal forwards;
+  animation: myRotate216 0.3s ease-in-out 0s 1 normal forwards;
 }
 
 @keyframes myRotate216 {
@@ -92,14 +97,14 @@ img.earth-img-216-0{
 }
 img.earth-img-216-1{
   position:fixed;
-  margin-left: auto;
-  margin-right:auto;
+  display: block;
+  margin-left: calc(50% - 650px);
   z-index: -1;
   bottom: calc(0% - 1000px);
-  animation: myRotate2161 0.3s ease-in 0s 1 reverse forwards;
+  animation: my-Rotate2161 0.3s ease-in-out 0s 1 reverse forwards;
 }
 
-@keyframes myRotate2161 {
+@keyframes my-Rotate2161 {
   from {transform: rotate(216deg)}
   to {transform: rotate(288deg)}
 }
@@ -107,11 +112,11 @@ img.earth-img-216-1{
 
 img.earth-img-288-0{
   position:fixed;
-  margin-left: auto;
-  margin-right:auto;
+  display: block;
+  margin-left: calc(50% - 650px);
   z-index: -1;
   bottom: calc(0% - 1000px);
-  animation: myRotate288 0.3s ease-in 0s 1 normal forwards;
+  animation: myRotate288 0.3s ease-in-out 0s 1 normal forwards;
 }
 
 @keyframes myRotate288 {
@@ -121,14 +126,14 @@ img.earth-img-288-0{
 
 img.earth-img-288-1{
   position:fixed;
-  margin-left: auto;
-  margin-right:auto;
+  display: block;
+  margin-left: calc(50% - 650px);
   z-index: -1;
   bottom: calc(0% - 1000px);
-  animation: myRotate2881 0.3s ease-in 0s 1 reverse forwards;
+  animation: my-Rotate2881 0.3s ease-in-out 0s 1 reverse forwards;
 }
 
-@keyframes myRotate2881 {
+@keyframes my-Rotate2881 {
   from {transform: rotate(288deg)}
   to {transform: rotate(360deg)}
 }
