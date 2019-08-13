@@ -1,8 +1,10 @@
 import React from 'react';
 import './Title.css';
 import Mylogo from '../mylogo.svg';
+
 class Title extends React.Component{
     render(){
+
         return(
             <div id="title">
                 <img src={Mylogo} alt="mylogo" className="title-logo"/>

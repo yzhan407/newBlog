@@ -23,3 +23,8 @@ h6{
     width: 80px;
     height: 100px;
 }
+div > span.time{
+    right:0;
+    top:0;
+
+}
