@@ -1,4 +1,61 @@
 div.outer-article{
   z-index: 0;
-  height: 5000px;
+
+}
+
+div>div.first-article{
+  color: rgb(139, 79, 79);
+  height: 1000px;
+  z-index: -10;
+}
+div>div.second-article{
+  background-color: rgb(90, 79, 139);
+  height: 1000px;
+  z-index: -10;
+}
+div>div.third-article{
+  background-color: aqua;
+  height: 1000px;
+  z-index: -10;
+}
+div>div.fourth-article{
+  background-color: blanchedalmond;
+  height: 1000px;
+  z-index: -10;
+}
+div>div.fifth-article{
+  background-color: azure;
+  height: 1000px;
+  z-index: -10;
+}
+
+iframe{
+  top: auto;
+  display:block;
+  width: 60em;
+  height: 30em !important;
+  left: 5em;
+  margin-left: 8em;
+  margin-top: 6em;
+}
+
+div>div>div>div.thesis-abstract{
+  margin: 10%;
+  margin-top: 5%;
+  
+
+}
+p.abstract{
+  font-weight: bold;
+  font-size: 110%;
+}
+p.thesis-title{
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+
+}
+p.thesis-title-2{
+  text-align:1em;
+  text-align: center;
 }
