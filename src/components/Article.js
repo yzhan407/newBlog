@@ -21,8 +21,8 @@ function Article(props){
                         <p className="blog-title">Blog</p>
                         {tags}
                     </div>
-                    <div className="first-article-rightside">
-
+                    <div id="first-article-rightside">
+                        <p className="news">News in US today</p>
                     </div>
                 </div>
                 

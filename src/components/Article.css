@@ -8,7 +8,6 @@ div>div.first-article{
   height: 1100px;
   z-index: -10;
 
-
 }
 div>div.second-article{
   background-color: rgb(90, 79, 139);
@@ -81,11 +80,12 @@ div.second-article-description{
 }
 
 #first-article-leftside{
-  width: 50%;
+  width: 40%;
   height: 700px;
   border-style: outset;
   border-width: 6px;
   border-radius: 10px;
+  position: absolute;
 }
 
 p.blog-title{
@@ -93,4 +93,21 @@ p.blog-title{
   font-size: 2em;
   font-family: 'Indie Flower', cursive;
   color: rgb(146, 82, 82);
+}
+
+#first-article-rightside{
+  width: 40%;
+  height: 700px;
+  border-style: outset;
+  border-width: 6px;
+  border-radius:10px;
+  left: 50%;
+  position:absolute;
+}
+
+p.news{
+  text-align:center;
+  font-size: 2em;
+  font-family: 'Indie Flower', cursive;
+  color:rgb(146, 82, 82);
 }
