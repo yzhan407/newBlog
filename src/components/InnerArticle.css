@@ -1,3 +1,15 @@
 div.inner-article {
   z-index: 0;
+  border-style: outset;
+  border-width: 8px;
+  border-radius: 15px;
+  height: 50px;
+}
+.inner-article:hover{
+  border-style: inset;
+}
+
+div.inner-article>a>div>p{
+  margin-left: 1em;
+  margin-top: 0.3em;
 }

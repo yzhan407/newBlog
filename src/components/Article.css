@@ -5,27 +5,29 @@ div.outer-article{
 
 div>div.first-article{
   color: rgb(139, 79, 79);
-  height: 1000px;
+  height: 1100px;
   z-index: -10;
+
+
 }
 div>div.second-article{
   background-color: rgb(90, 79, 139);
-  height: 1000px;
+  height: 1100px;
   z-index: -10;
 }
 div>div.third-article{
   background-color: aqua;
-  height: 1000px;
+  height: 1100px;
   z-index: -10;
 }
 div>div.fourth-article{
   background-color: blanchedalmond;
-  height: 1000px;
+  height: 1100px;
   z-index: -10;
 }
 div>div.fifth-article{
   background-color: azure;
-  height: 1000px;
+  height: 1100px;
   z-index: -10;
 }
 
@@ -35,7 +37,7 @@ iframe{
   width: 60em;
   height: 30em !important;
   left: 5em;
-  margin-left: 8em;
+  margin-left: 12em;
   margin-top: 6em;
 }
 
@@ -58,4 +60,37 @@ p.thesis-title{
 p.thesis-title-2{
   text-align:1em;
   text-align: center;
+}
+
+div.first-article-container{
+  margin: 10%;
+  margin-top: 10%;
+
+}
+
+div.second-article-description{
+  right: 15%;
+  width: 20%;
+  position: absolute;
+  top: 1600px;
+}
+
+#thesis-img{
+  width: 80%;
+  height: auto;
+}
+
+#first-article-leftside{
+  width: 50%;
+  height: 700px;
+  border-style: outset;
+  border-width: 6px;
+  border-radius: 10px;
+}
+
+p.blog-title{
+  text-align: center;
+  font-size: 2em;
+  font-family: 'Indie Flower', cursive;
+  color: rgb(146, 82, 82);
 }

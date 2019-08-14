@@ -7,9 +7,11 @@ function InnerArticle(props){
     console.log(props)
         return(
             <div className="inner-article">
-                <div>
-                    {props.data.title}
-                </div>
+                <a href={props.data.link}>
+                    <div>
+                        <p>{props.data.title}</p>
+                    </div>
+                </a>
             </div>
         )
     

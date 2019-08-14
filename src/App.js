@@ -15,6 +15,7 @@ class App extends Component {
     data:[],
     l:undefined,
     updateInfo: 0,
+    today: Date(),
   }
 
   // there needs to be () around res, and res is an object consists of data ,status etc.
