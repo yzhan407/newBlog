@@ -1,0 +1,15 @@
+div.inner-news {
+  z-index: 0;
+  border-style: outset;
+  border-width: 8px;
+  border-radius: 15px;
+  height: 65px;
+}
+.inner-news:hover{
+  border-style: inset;
+}
+
+div.inner-news>a>div>p{
+  margin-left: 1em;
+  margin-top: 0.3em;
+}

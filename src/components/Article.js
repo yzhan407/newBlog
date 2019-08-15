@@ -2,6 +2,7 @@ import React from 'react';
 import InnerArticle from './InnerArticle';
 import './Article.css';
 import cf from '../Crazyflie2-1.svg';
+import InnerNews from './InnerNews';
 
 
 function Article(props){
@@ -12,7 +13,25 @@ function Article(props){
             <InnerArticle key={i} data={props.data[i]}></InnerArticle>
         )
     }
+
+    console.log(props.news);
+    let news=[];
+    if (props.newsLength===0){
+        news=[];
+    }
+    else{
+
     
+    for (let j=0;j<props.newsLength-1;j++){
+        news.push(
+            <InnerNews key={j} data={props.news[j]}></InnerNews>
+        )
+    }
+    if (props.newsLength>10){
+        news=news.slice(0,9)
+    }
+    console.log(news[0].props.data.url);
+}
     return(
         <div className="outer-article">
             <div className="first-article">
@@ -23,6 +42,7 @@ function Article(props){
                     </div>
                     <div id="first-article-rightside">
                         <p className="news">News in US today</p>
+                       {news}
                     </div>
                 </div>
                 

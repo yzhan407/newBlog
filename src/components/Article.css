@@ -111,3 +111,9 @@ p.news{
   font-family: 'Indie Flower', cursive;
   color:rgb(146, 82, 82);
 }
+
+@media (max-width : 1500px) {
+  .second-article-description{
+    display: none;
+  }
+}

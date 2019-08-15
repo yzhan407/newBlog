@@ -1,12 +1,12 @@
 import React from 'react';
-import './InnerArticle.css';
+import './InnerNews.css';
 
 
-
-function InnerArticle(props){
+function InnerNews(props){
+        console.log(props.data.url);
         return(
-            <div className="inner-article">
-                <a href={props.data.link}>
+            <div className="inner-news">
+                <a href={props.data.url}>
                     <div>
                         <p>{props.data.title}</p>
                     </div>
@@ -16,4 +16,4 @@ function InnerArticle(props){
     
 }
     
-export default InnerArticle;
+export default InnerNews;

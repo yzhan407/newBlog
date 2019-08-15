@@ -16,13 +16,18 @@ class App extends Component {
     l:undefined,
     updateInfo: 0,
     today: Date(),
+    news:[],
+    newsLength:0,
   }
 
   // there needs to be () around res, and res is an object consists of data ,status etc.
   
   componentDidMount(){
-    axios.get(`http://www.yifanzhang47.com/wp-json/wp/v2/posts`)
-      .then((res)=>{
+    axios.all([
+      axios.get(`http://www.yifanzhang47.com/wp-json/wp/v2/posts`),
+      axios.get(`https://newsapi.org/v2/top-headlines?country=us&apiKey=d0dc8443dfdd45e0b01b4e15b237b688&pageSize=70`)
+    ])
+      .then(axios.spread((res,res2)=>{
         let temp=[];
         for(let i=0;i<res.data.length;i++){
           temp.push({
@@ -33,12 +38,35 @@ class App extends Component {
             slug:res.data[i].slug
           })
           };
-          this.setState({
+        let newTemp=[];
+        for(let j=0;j<res2.data.articles.length;j++){
+          newTemp.push(res2.data.articles[j])
+        };
+        this.setState(
+          {
+            newsLength: res2.data.articles.length,
+            news: newTemp,
             data:temp,
             l:res.data.length,
             updateInfo:1
-        })
-      })
+          }
+        )
+        console.log(newTemp);
+      }))
+        
+  /*  axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=d0dc8443dfdd45e0b01b4e15b237b688&pageSize=70')
+      .then((res2)=>{
+        let newTemp=[];
+        for(let j=0;j<res2.data.articles.length;j++){
+          newTemp.push(res2.data.articles[j])
+        };
+        this.setState(
+          {
+            newsLength: res2.data.articles.length,
+            news: newTemp,
+          }
+        )
+      })*/
     
   }
 
@@ -48,7 +76,7 @@ class App extends Component {
     return (
       <div >
         <Title ></Title>
-          <Article articlenums={this.state.data.length} data={this.state.data}></Article>
+          <Article articlenums={this.state.data.length} data={this.state.data} news={this.state.news} newsLength={this.state.newsLength}></Article>
           <Sidebar updateInfo={this.state.updateInfo}/>
           <Footer />
       </div>
