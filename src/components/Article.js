@@ -65,7 +65,7 @@ function Article(props){
             <div className="third-article">
                 <div className="third-article-container">
                     <p>
-                        how this site is built?
+                        how was this site built?
                     </p>
                 </div>
 

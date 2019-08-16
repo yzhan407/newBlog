@@ -103,6 +103,8 @@ p.blog-title{
   border-radius:10px;
   left: 50%;
   position:absolute;
+  overflow-y: auto;
+  background-image: linear-gradient(-90deg,rgb(155, 140, 58),rgb(218, 219, 177));
 }
 
 p.news{
