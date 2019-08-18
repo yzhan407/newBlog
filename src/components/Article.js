@@ -3,6 +3,9 @@ import InnerArticle from './InnerArticle';
 import './Article.css';
 import cf from '../Crazyflie2-1.svg';
 import InnerNews from './InnerNews';
+import iesd1 from '../iesdsidebar.png';
+import iesd2 from '../iesdsidebar.png';
+
 
 
 function Article(props){
@@ -59,14 +62,21 @@ function Article(props){
                     <div className="thesis-abstract">
                     <p className="abstract">Abstract</p>
                     <p>Formation control and trajectory following using distributed optimization algorithms is validated in this thesis. The crazyflie platform is used for validating the algorithms. Then the implementations on different algorithms and different numbers of robots take place.  Firstly, distributed optimization algorithm with general time-varying cost functions is implemented to make the crazyflies follow a line trajectory in a square formation.  Then another distributed optimization algorithm with time-varying cost functions and nonidentical hessian is used to get the crazeflies follow a circle trajectory in a square formation. After achieving relatively high accuracy of implementation of the two distributed optimization algorithms, a target tracking task is performed to prove the feasibility of the algorithms. In all, this thesis explores a new way for distributed optimization algorithms on multi-agent systems such as UAVs.</p>
+                    <a className="thesis-git" href="https://github.com/yzhan407/thesisproject_modification_scripts"> check out the github</a>
                     </div>
                 </div>
             </div>
             <div className="third-article">
                 <div className="third-article-container">
                     <p>
-                        how was this site built?
+                        IESD website
                     </p>
+                    <p>IESD (inland empire software development) is a non-profit organization. It provides the opportunity for developers in Riverside area to meet and networking.</p>
+                    <span href="http://ie-sd.com"></span>
+                    <p>I helped them with the side bar of their original design.</p>
+                    <img src={iesd1} alt="sidebarDesign-1"></img>
+                    <img src={iesd2} alt="sidebarDeisgn-2"></img>
+                    <a href="https://github.com/inland-empire-software-development/main"> Also please check out iesd github page!</a>
                 </div>
 
             </div>

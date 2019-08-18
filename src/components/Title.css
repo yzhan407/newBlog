@@ -28,3 +28,17 @@ div > span.time{
     top:0;
 
 }
+a.porfolio-link{
+    position: absolute;
+    top: 0.75em;
+    left: 5%;
+    font-size: 24px;
+    color: black;
+}
+a.blog-git-link{
+    position: absolute;
+    top: 0.75em;
+    right: 10%;
+    font-size: 24px;
+    color:black;
+}

@@ -104,7 +104,6 @@ p.blog-title{
   left: 50%;
   position:absolute;
   overflow-y: auto;
-  background-image: linear-gradient(-90deg,rgb(155, 140, 58),rgb(218, 219, 177));
 }
 
 p.news{
@@ -112,6 +111,12 @@ p.news{
   font-size: 2em;
   font-family: 'Indie Flower', cursive;
   color:rgb(146, 82, 82);
+}
+
+a.thesis-git{
+  position: absolute;
+  font-size: 20px;
+  right: 30%;
 }
 
 @media (max-width : 1500px) {
