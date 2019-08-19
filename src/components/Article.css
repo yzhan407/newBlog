@@ -15,7 +15,7 @@ div>div.second-article{
   z-index: -10;
 }
 div>div.third-article{
-  background-color: aqua;
+  background-color: rgb(223, 221, 221);
   height: 1100px;
   z-index: -10;
 }
@@ -119,8 +119,53 @@ a.thesis-git{
   right: 30%;
 }
 
+p.iesd-title{
+  font-size: 36px;
+  text-align: center;
+  font-family: 'Indie Flower', cursive;
+  font-weight: bold;
+  margin-top: 20px;
+}
+p.iesd-description{
+  font-size: 20px;
+  margin-left: 10%;
+  margin-top: 40px;
+
+}
+p.iesd-intro{
+  font-size: 20px;
+  margin-left: 10%;
+  margin-top: 10px;
+}
+img.SD1{
+  width: 300px;
+  height: 300px;
+}
+img.SD2{
+  width: 300px;
+  height: 300px;
+}
+img.SD3{
+  width: 300px;
+  height: 300px
+}
+img.SD4{
+  width:300px;
+  height:300px ;
+}
+div.ie-img-container{
+  display:flex ;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+a.iesd-git{
+  font-size: 20px;
+  margin-left: 10%;
+  margin-top: 10%;
+}
 @media (max-width : 1500px) {
   .second-article-description{
     display: none;
   }
 }
+

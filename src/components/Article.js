@@ -5,6 +5,8 @@ import cf from '../Crazyflie2-1.svg';
 import InnerNews from './InnerNews';
 import iesd1 from '../iesdsidebar.png';
 import iesd2 from '../iesdsidebar.png';
+import iesd3 from '../sidebar3.png';
+import iesd4 from '../sidebar4.png';
 
 
 
@@ -68,15 +70,27 @@ function Article(props){
             </div>
             <div className="third-article">
                 <div className="third-article-container">
-                    <p>
+                    <p className="iesd-title">
                         IESD website
                     </p>
-                    <p>IESD (inland empire software development) is a non-profit organization. It provides the opportunity for developers in Riverside area to meet and networking.</p>
+                    <p className="iesd-description">IESD (inland empire software development) is a non-profit organization. It provides the opportunity for developers in Riverside area to meet and networking.</p>
                     <span href="http://ie-sd.com"></span>
-                    <p>I helped them with the side bar of their original design.</p>
-                    <img src={iesd1} alt="sidebarDesign-1"></img>
-                    <img src={iesd2} alt="sidebarDeisgn-2"></img>
-                    <a href="https://github.com/inland-empire-software-development/main"> Also please check out iesd github page!</a>
+                    <p className="iesd-intro">Collaborated with other talented developers building the website using Git, html and css, developing sidebar components( both right sidebar and left sidebar) and make them appear according to the requirements which the team leader specified</p>
+                    <div className="ie-img-container">
+                        <div>
+                        <img src={iesd1} alt="sidebarDesign-1" className="SD1"></img>
+                        </div>
+                        <div>
+                        <img src={iesd2} alt="sidebarDeisgn-2" className="SD2"></img>
+                        </div>
+                        <div>
+                        <img src={iesd3} alt="sidebar3" className="SD3"></img>
+                        </div>
+                        <div>
+                        <img src={iesd4} alt="sidebar4" className="SD4"></img>
+                        </div>
+                    </div>
+                    <a href="https://github.com/inland-empire-software-development/main" className="iesd-git"> Also please check out iesd github page!</a>
                 </div>
 
             </div>
